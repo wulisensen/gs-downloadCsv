@@ -1,0 +1,20 @@
+{
+  "name": "gs-downloadCsv",
+  "version": "1.0.0",
+  "description": "make a csv file to download in browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wulisensen/gs-downloadCsv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wulisensen/gs-downloadCsv/issues"
+  },
+  "homepage": "https://github.com/wulisensen/gs-downloadCsv#readme"
+}
