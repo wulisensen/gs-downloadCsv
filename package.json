@@ -10,7 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/wulisensen/gs-downloadCsv.git"
   },
-  "keywords": [],
+  "keywords": [
+    "download",
+    "csv",
+    "gs"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
