@@ -19,7 +19,7 @@ const enumobj = {
 };
 const filename = 'filename';
 
-downloadCsv({ data: newData, head, enumobj, filename });
+downloadCsv({ data, head, enumobj, filename });
 ```
 
 then you can download csv file
