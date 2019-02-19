@@ -10,15 +10,10 @@
 function getHeader({ record, head }) {
     const keyList = [];
     const valueList = [];
-    for (const key in record) {
-        if (key in record) {
-            if (typeof head !== 'undefined' && key in head) {
-                valueList.push(head[key]);
-            } else {
-                valueList.push(key);
-            }
-            keyList.push(key);
-        }
+    for (const key in head) {
+        const ele = head[key];
+        keyList.push(key);
+        valueList.push(ele);
     }
     return {
         keyList,
@@ -41,6 +36,8 @@ function format({ data, head, enumobj }) {
                 } else {
                     list.push(line[key]);
                 }
+            } else {
+                list.push('');
             }
         });
         str += list.join(',');
@@ -52,7 +49,7 @@ function format({ data, head, enumobj }) {
 /**
  * 将数组生成csv导出下载
  * @param {array} data 要生成csv的数组
- * @param {object} head 表头的注解 not-require
+ * @param {object} head 表头 require
  * @param {object} enumobj 内容的注解 not-require
  * @param {string} filename 文件名 not-require
  */
