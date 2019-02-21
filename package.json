@@ -1,6 +1,6 @@
 {
     "name": "gs-csv",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "make a csv file to download in browser",
     "main": "index.js",
     "scripts": {
